@@ -35,10 +35,10 @@ const database: ISkill.Skill = {
   items: [
     {
       title: 'MySQL',
-      level: 3,
+      level: 2,
     },
     {
-      title: 'Oracle',
+      title: 'Postgresql',
       level: 2,
     },
     {
@@ -47,7 +47,7 @@ const database: ISkill.Skill = {
     },
     {
       title: 'MongoDB',
-      level: 1,
+      level: 2,
     },
   ],
 };
@@ -55,14 +55,6 @@ const database: ISkill.Skill = {
 const frontend: ISkill.Skill = {
   category: 'Front-end',
   items: [
-    {
-      title: 'Next.js',
-      level: 2,
-    },
-    {
-      title: 'React.js',
-      level: 2,
-    },
     {
       title: 'javascript',
       level: 2,
@@ -88,9 +80,6 @@ const etc: ISkill.Skill = {
     },
     {
       title: 'VS Code',
-    },
-    {
-      title: 'Jira',
     },
     {
       title: 'Confluence',
