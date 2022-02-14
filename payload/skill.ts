@@ -3,97 +3,45 @@ import { ISkill } from '../component/skill/ISkill';
 const backend: ISkill.Skill = {
   category: 'Back-end',
   items: [
-    {
-      title: 'Node.js',
-      level: 2,
-    },
-    {
-      title: 'AWS',
-      level: 3,
-    },
-    {
-      title: 'Java',
-      level: 1,
-    },
-    {
-      title: 'Python',
-      level: 1,
-    },
-    {
-      title: 'C/C++',
-      level: 1,
-    },
-    {
-      title: 'Rust',
-      level: 1,
-    },
-    {
-      title: 'PHP',
-      level: 1,
-    },
+    { title: 'Java', level: 3 },
+    { title: 'javascript', level: 2 },
+    { title: 'typescript', level: 2 },
+    { title: 'Python', level: 1 },
+    { title: 'C/C++', level: 1 },
+    { title: 'Rust', level: 1 },
+    { title: 'Go', level: 1 },
+    { title: 'PHP', level: 1 },
   ],
 };
 
 const database: ISkill.Skill = {
-  category: 'Database',
+  category: 'DATABASE',
   items: [
-    {
-      title: 'MySQL',
-      level: 2,
-    },
-    {
-      title: 'Postgresql',
-      level: 2,
-    },
-    {
-      title: 'Redis',
-      level: 2,
-    },
-    {
-      title: 'MongoDB',
-      level: 2,
-    },
+    { title: 'MySQL', level: 2 },
+    { title: 'Postgresql', level: 2 },
+    { title: 'Redis', level: 2 },
+    { title: 'MongoDB', level: 2 },
   ],
 };
 
 const frontend: ISkill.Skill = {
-  category: 'Front-end',
+  category: 'FRONT-END',
   items: [
-    {
-      title: 'javascript',
-      level: 2,
-    },
-    {
-      title: 'HTML/CSS',
-      level: 2,
-    },
+    { title: 'javascript', level: 2 },
+    { title: 'HTML/CSS', level: 2 },
   ],
 };
 
 const etc: ISkill.Skill = {
-  category: 'Etc',
+  category: 'ETC',
   items: [
-    {
-      title: 'Ubuntu',
-    },
-    {
-      title: 'Arch Linux',
-    },
-    {
-      title: 'Vim',
-    },
-    {
-      title: 'VS Code',
-    },
-    {
-      title: 'Docker',
-    },
-    {
-      title: 'Kubernetes',
-    },
-    {
-      title: 'Prometheus',
-    },
+    { title: 'Ubuntu' },
+    { title: 'Arch Linux' },
+    { title: 'Vim' },
+    { title: 'VS Code' },
+    { title: 'Docker' },
+    { title: 'Kubernetes' },
+    { title: 'Prometheus' },
   ],
 };
 
