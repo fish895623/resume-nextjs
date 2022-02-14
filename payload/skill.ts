@@ -5,15 +5,11 @@ const backend: ISkill.Skill = {
   items: [
     {
       title: 'Node.js',
-      level: 3,
+      level: 2,
     },
     {
       title: 'AWS',
       level: 3,
-    },
-    {
-      title: 'PHP',
-      level: 2,
     },
     {
       title: 'Java',
@@ -25,6 +21,14 @@ const backend: ISkill.Skill = {
     },
     {
       title: 'C/C++',
+      level: 1,
+    },
+    {
+      title: 'Rust',
+      level: 1,
+    },
+    {
+      title: 'PHP',
       level: 1,
     },
   ],
@@ -73,16 +77,22 @@ const etc: ISkill.Skill = {
       title: 'Ubuntu',
     },
     {
-      title: 'Vim',
+      title: 'Arch Linux',
     },
     {
-      title: 'Security',
+      title: 'Vim',
     },
     {
       title: 'VS Code',
     },
     {
-      title: 'Confluence',
+      title: 'Docker',
+    },
+    {
+      title: 'Kubernetes',
+    },
+    {
+      title: 'Prometheus',
     },
   ],
 };
