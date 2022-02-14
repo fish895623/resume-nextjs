@@ -1,12 +1,12 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const backend: ISkill.Skill = {
-  category: 'Back-end',
+  category: 'BACK-END',
   items: [
     { title: 'Java', level: 3 },
+    { title: 'Python', level: 3 },
     { title: 'javascript', level: 2 },
     { title: 'typescript', level: 2 },
-    { title: 'Python', level: 1 },
     { title: 'C/C++', level: 1 },
     { title: 'Rust', level: 1 },
     { title: 'Go', level: 1 },
