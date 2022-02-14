@@ -42,6 +42,8 @@ const etc: ISkill.Skill = {
     { title: 'Docker' },
     { title: 'Kubernetes' },
     { title: 'Prometheus' },
+    { title: 'Teamcity' },
+    { title: 'Jenkins' },
   ],
 };
 
