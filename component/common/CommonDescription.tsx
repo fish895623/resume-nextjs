@@ -1,6 +1,6 @@
-import { PropsWithChildren, CSSProperties } from 'react';
-import { IRow } from './IRow';
-import { HrefTargetBlank } from '.';
+import { PropsWithChildren, CSSProperties } from 'react'
+import { IRow } from './IRow'
+import { HrefTargetBlank } from '.'
 
 /** Description Recusion Generator */
 export function CommonDescription({
@@ -24,14 +24,14 @@ export function CommonDescription({
                   ''
                 )}
               </>
-            );
+            )
           })}
         </ul>
       ) : (
         ''
       )}
     </>
-  );
+  )
 }
 
 // ul 태그 depth 표현을 위한 재귀
@@ -53,14 +53,14 @@ function DescriptionRecursion({
               ''
             )}
           </>
-        );
+        )
       })}
     </ul>
-  );
+  )
 }
 
 function Description({ description }: PropsWithChildren<{ description: IRow.Description }>) {
-  const { content, href, postImage, postHref, weight } = description;
+  const { content, href, postImage, postHref, weight } = description
 
   const component = (() => {
     if (href && postImage) {
@@ -68,14 +68,14 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} /> <img src={postImage} alt={postImage} />
         </li>
-      );
+      )
     }
     if (href) {
       return (
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} />
         </li>
-      );
+      )
     }
     if (postHref && postImage) {
       return (
@@ -83,36 +83,36 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
           {content} <HrefTargetBlank url={postHref} text={postHref} />{' '}
           <img src={postImage} alt={postImage} />
         </li>
-      );
+      )
     }
     if (postHref) {
       return (
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />
         </li>
-      );
+      )
     }
     if (postImage) {
       return (
         <li style={getFontWeight(weight)}>
           {content} <img src={postImage} alt={postImage} />
         </li>
-      );
+      )
     }
-    return <li style={getFontWeight(weight)}>{content}</li>;
-  })();
+    return <li style={getFontWeight(weight)}>{content}</li>
+  })()
 
-  return component;
+  return component
 }
 
 function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
   if (!weight) {
     // style 에 fontWeight 범벅 되는것을 방지
-    return {};
+    return {}
   }
   return {
     fontWeight: fontWeight[weight || 'DEFAULT'],
-  };
+  }
 }
 
 // Noto Sans KR Weights: 300, 400, 500, 700
@@ -123,4 +123,4 @@ const fontWeight: Record<IRow.FontWeightType, number> = {
   MEDIUM: 500,
   // BOLD: 700,
   BOLD: 500,
-};
+}

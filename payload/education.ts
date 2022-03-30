@@ -1,4 +1,4 @@
-import { IEducation } from '../component/education/IEducation';
+import { IEducation } from '../component/education/IEducation'
 
 const education: IEducation.Payload = {
   disable: false,
@@ -17,6 +17,6 @@ const education: IEducation.Payload = {
       endedAt: '2010-02',
     },
   ],
-};
+}
 
-export default education;
+export default education

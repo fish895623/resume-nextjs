@@ -1,4 +1,4 @@
-import { IPresentation } from '../component/presentation/IPresentation';
+import { IPresentation } from '../component/presentation/IPresentation'
 
 const presentation: IPresentation.Payload = {
   disable: false,
@@ -19,6 +19,6 @@ const presentation: IPresentation.Payload = {
       ],
     },
   ],
-};
+}
 
-export default presentation;
+export default presentation

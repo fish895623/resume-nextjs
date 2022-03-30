@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
-import { IProfile } from './IProfile';
-import { HrefTargetBlank } from '../common';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { PropsWithChildren } from 'react'
+import { Row, Col, Badge } from 'reactstrap'
+import { IProfile } from './IProfile'
+import { HrefTargetBlank } from '../common'
 
 export default function ProfileContact({
   payload,
@@ -14,16 +14,16 @@ export default function ProfileContact({
       </Col>
       <Col xs="auto">{createLink(payload)}</Col>
     </Row>
-  );
+  )
 }
 
 function createLink(payload: IProfile.Contact) {
   if (payload.badge) {
-    return <Badge color="light">{payload.title || payload.link}</Badge>;
+    return <Badge color="light">{payload.title || payload.link}</Badge>
   }
   return payload.link ? (
     <HrefTargetBlank url={payload.link} text={payload.title} />
   ) : (
     <span>{payload.title}</span>
-  );
+  )
 }

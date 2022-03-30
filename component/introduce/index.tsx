@@ -1,30 +1,30 @@
-import { Row, Col, Badge } from 'reactstrap';
-import { PropsWithChildren } from 'react';
-import { DateTime } from 'luxon';
-import { Style } from '../common/Style';
-import Util from '../common/Util';
-import { IIntroduce } from './IIntroduce';
-import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { Row, Col, Badge } from 'reactstrap'
+import { PropsWithChildren } from 'react'
+import { DateTime } from 'luxon'
+import { Style } from '../common/Style'
+import Util from '../common/Util'
+import { IIntroduce } from './IIntroduce'
+import { PreProcessingComponent } from '../common/PreProcessingComponent'
 
-type Payload = IIntroduce.Payload;
+type Payload = IIntroduce.Payload
 
 export const Introduce = {
   Component: ({ payload }: PropsWithChildren<{ payload: Payload }>) => {
     return PreProcessingComponent<Payload>({
       payload,
       component: Component,
-    });
+    })
   },
-};
+}
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   const latestUpdated = DateTime.fromFormat(
     payload.latestUpdated,
     Util.LUXON_DATE_FORMAT.YYYY_LL_DD,
-  );
+  )
   const latestUpdatedByNow = Math.floor(
     DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
-  );
+  )
 
   return (
     <div className="mt-5">
@@ -50,5 +50,5 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
       </Row>
     </div>
-  );
+  )
 }

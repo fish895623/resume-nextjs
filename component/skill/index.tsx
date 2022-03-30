@@ -1,23 +1,23 @@
-import { Row, Col, Tooltip } from 'reactstrap';
-import { PropsWithChildren, useState } from 'react';
-import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Style } from '../common/Style';
-import { ISkill } from './ISkill';
-import SkillRow from './row';
-import { EmptyRowCol } from '../common';
-import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { Row, Col, Tooltip } from 'reactstrap'
+import { PropsWithChildren, useState } from 'react'
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Style } from '../common/Style'
+import { ISkill } from './ISkill'
+import SkillRow from './row'
+import { EmptyRowCol } from '../common'
+import { PreProcessingComponent } from '../common/PreProcessingComponent'
 
-type Payload = ISkill.Payload;
+type Payload = ISkill.Payload
 
 export const Skill = {
   Component: ({ payload }: PropsWithChildren<{ payload: Payload }>) => {
     return PreProcessingComponent<Payload>({
       payload,
       component: Component,
-    });
+    })
   },
-};
+}
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   return (
@@ -36,16 +36,16 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         ))}
       </EmptyRowCol>
     </div>
-  );
+  )
 }
 
 function createTooltip(content?: string) {
   if (!content) {
-    return '';
+    return ''
   }
 
-  const [tooltipOpen, setTooltipOpen] = useState(false);
-  const toggle = () => setTooltipOpen(!tooltipOpen);
+  const [tooltipOpen, setTooltipOpen] = useState(false)
+  const toggle = () => setTooltipOpen(!tooltipOpen)
 
   return (
     <small>
@@ -61,5 +61,5 @@ function createTooltip(content?: string) {
         {content}
       </Tooltip>
     </small>
-  );
+  )
 }

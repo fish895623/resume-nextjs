@@ -1,8 +1,8 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import image from '../asset/_sample.jpg';
-import { IProfile } from '../component/profile/IProfile';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faBell } from '@fortawesome/free-regular-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import image from '../asset/_sample.jpg'
+import { IProfile } from '../component/profile/IProfile'
 
 const profile: IProfile.Payload = {
   disable: false,
@@ -34,6 +34,6 @@ const profile: IProfile.Payload = {
     title: '이메일 혹은 깃헙 이슈로 연락 부탁드립니다.',
     icon: faBell,
   },
-};
+}
 
-export default profile;
+export default profile

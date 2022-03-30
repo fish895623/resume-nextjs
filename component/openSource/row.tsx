@@ -1,8 +1,8 @@
-import { PropsWithChildren } from 'react';
-import { IOpenSource } from './IOpenSource';
-import { EmptyRowCol } from '../common';
-import { CommonRows } from '../common/CommonRow';
-import { IRow } from '../common/IRow';
+import { PropsWithChildren } from 'react'
+import { IOpenSource } from './IOpenSource'
+import { EmptyRowCol } from '../common'
+import { CommonRows } from '../common/CommonRow'
+import { IRow } from '../common/IRow'
 
 export default function OpenSourceRow({
   payload,
@@ -13,7 +13,7 @@ export default function OpenSourceRow({
         <CommonRows key={index.toString()} payload={serialize(item)} index={index} />
       ))}
     </EmptyRowCol>
-  );
+  )
 }
 
 function serialize(item: IOpenSource.Item): IRow.Payload {
@@ -24,5 +24,5 @@ function serialize(item: IOpenSource.Item): IRow.Payload {
     right: {
       descriptions: item.descriptions,
     },
-  };
+  }
 }

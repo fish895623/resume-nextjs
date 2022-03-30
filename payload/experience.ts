@@ -1,4 +1,4 @@
-import { IExperience } from '../component/experience/IExperience';
+import { IExperience } from '../component/experience/IExperience'
 
 const experience: IExperience.Payload = {
   disable: false,
@@ -28,6 +28,6 @@ const experience: IExperience.Payload = {
       skillKeywords: ['Node.js', 'MySQL', 'AWS'],
     },
   ],
-};
+}
 
-export default experience;
+export default experience

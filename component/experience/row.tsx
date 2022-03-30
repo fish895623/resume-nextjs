@@ -1,9 +1,9 @@
-import { DateTime } from 'luxon';
-import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
-import { IExperience } from './IExperience';
-import { Style } from '../common/Style';
-import Util from '../common/Util';
+import { DateTime } from 'luxon'
+import { PropsWithChildren } from 'react'
+import { Row, Col, Badge } from 'reactstrap'
+import { IExperience } from './IExperience'
+import { Style } from '../common/Style'
+import Util from '../common/Util'
 
 export default function ExperienceRow({
   item,
@@ -28,12 +28,12 @@ export default function ExperienceRow({
         </Col>
       </Row>
     </div>
-  );
+  )
 }
 
 function createSkillKeywords(skillKeywords?: string[]) {
   if (!skillKeywords) {
-    return '';
+    return ''
   }
   return (
     <li>
@@ -51,30 +51,30 @@ function createSkillKeywords(skillKeywords?: string[]) {
         ))}
       </div>
     </li>
-  );
+  )
 }
 
 function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
-  const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
-  const startedAt = DateTime.fromFormat(startedAtString, DATE_FORMAT.YYYY_LL);
+  const DATE_FORMAT = Util.LUXON_DATE_FORMAT
+  const startedAt = DateTime.fromFormat(startedAtString, DATE_FORMAT.YYYY_LL)
 
   const { periodTitle, endedAt, isWorking } = (() => {
     if (!endedAtString) {
       return {
         periodTitle: `${startedAt.toFormat(DATE_FORMAT.YYYY_DOT_LL)} ~`,
         isWorking: true,
-      };
+      }
     }
 
-    const _endedAt = DateTime.fromFormat(endedAtString, DATE_FORMAT.YYYY_LL);
+    const _endedAt = DateTime.fromFormat(endedAtString, DATE_FORMAT.YYYY_LL)
     return {
       periodTitle: `${startedAt.toFormat(DATE_FORMAT.YYYY_DOT_LL)} ~ ${_endedAt.toFormat(
         DATE_FORMAT.YYYY_DOT_LL,
       )}`,
       endedAt: _endedAt,
       isWorking: false,
-    };
-  })();
+    }
+  })()
 
   return (
     <Row>
@@ -92,5 +92,5 @@ function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
         <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge>
       </Col>
     </Row>
-  );
+  )
 }

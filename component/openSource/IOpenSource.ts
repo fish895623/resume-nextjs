@@ -1,5 +1,5 @@
-import { IRow } from '../common/IRow';
-import { ICommon } from '../common/ICommon';
+import { IRow } from '../common/IRow'
+import { ICommon } from '../common/ICommon'
 
 export declare namespace IOpenSource {
   /**
@@ -11,7 +11,7 @@ export declare namespace IOpenSource {
    */
   export interface Payload extends ICommon.Payload {
     /** ### 오픈소스 활동 리스트 */
-    list: Item[];
+    list: Item[]
   }
 
   /**
@@ -21,9 +21,9 @@ export declare namespace IOpenSource {
     /**
      * ### 오픈소스 활동명
      */
-    title: string;
+    title: string
 
     /** ### 오픈소스 활동 설명 */
-    descriptions: IRow.Description[];
+    descriptions: IRow.Description[]
   }
 }

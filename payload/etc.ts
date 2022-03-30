@@ -1,4 +1,4 @@
-import { IEtc } from '../component/etc/IEtc';
+import { IEtc } from '../component/etc/IEtc'
 
 const etc: IEtc.Payload = {
   disable: false,
@@ -21,6 +21,6 @@ const etc: IEtc.Payload = {
       startedAt: '2008-05',
     },
   ],
-};
+}
 
-export default etc;
+export default etc

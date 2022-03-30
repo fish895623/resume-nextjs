@@ -1,4 +1,4 @@
-import { IProject } from '../component/project/IProject';
+import { IProject } from '../component/project/IProject'
 
 const project: IProject.Payload = {
   disable: false,
@@ -42,6 +42,6 @@ const project: IProject.Payload = {
       ],
     },
   ],
-};
+}
 
-export default project;
+export default project

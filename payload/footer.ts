@@ -1,7 +1,7 @@
-import { homepage, version } from '../package.json';
+import { homepage, version } from '../package.json'
 
-import { IFooter } from '../component/footer/IFooter';
-import { dependencies } from '../package-lock.json';
+import { IFooter } from '../component/footer/IFooter'
+import { dependencies } from '../package-lock.json'
 
 const footer: IFooter.Payload = {
   version,
@@ -9,6 +9,6 @@ const footer: IFooter.Payload = {
   nextVersion: dependencies.next.version,
   reactVersion: dependencies.react.version,
   bootstrapVersion: dependencies.bootstrap.version,
-};
+}
 
-export default footer;
+export default footer

@@ -1,4 +1,4 @@
-import { ISkill } from '../component/skill/ISkill';
+import { ISkill } from '../component/skill/ISkill'
 
 const backend: ISkill.Skill = {
   category: 'BACK-END',
@@ -12,7 +12,7 @@ const backend: ISkill.Skill = {
     { title: 'Go', level: 1 },
     { title: 'PHP', level: 1 },
   ],
-};
+}
 
 const database: ISkill.Skill = {
   category: 'DATABASE',
@@ -22,7 +22,7 @@ const database: ISkill.Skill = {
     { title: 'Redis', level: 2 },
     { title: 'MongoDB', level: 2 },
   ],
-};
+}
 
 const frontend: ISkill.Skill = {
   category: 'FRONT-END',
@@ -30,7 +30,7 @@ const frontend: ISkill.Skill = {
     { title: 'javascript', level: 2 },
     { title: 'HTML/CSS', level: 2 },
   ],
-};
+}
 
 const etc: ISkill.Skill = {
   category: 'ETC',
@@ -45,12 +45,12 @@ const etc: ISkill.Skill = {
     { title: 'Teamcity' },
     { title: 'Jenkins' },
   ],
-};
+}
 
 const skill: ISkill.Payload = {
   disable: false,
   skills: [backend, database, frontend, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
-};
+}
 
-export default skill;
+export default skill

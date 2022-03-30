@@ -1,5 +1,5 @@
-import { IRow } from '../common/IRow';
-import { ICommon } from '../common/ICommon';
+import { IRow } from '../common/IRow'
+import { ICommon } from '../common/ICommon'
 
 export declare namespace IProject {
   /**
@@ -11,15 +11,15 @@ export declare namespace IProject {
    */
   export interface Payload extends ICommon.Payload {
     /** ### 프로젝트 리스트 */
-    list: Item[];
+    list: Item[]
   }
 
   export interface Item {
     /** ### 프로젝트 제목 */
-    title: string;
+    title: string
 
     /** ### 어디서 수행했는지 (or subtitle) */
-    where: string;
+    where: string
 
     /**
      * ### 프로젝트 시작일
@@ -27,7 +27,7 @@ export declare namespace IProject {
      * @format YYYY-MM
      * @example "2018-02"
      */
-    startedAt: string;
+    startedAt: string
 
     /**
      * ### 프로젝트 종료일
@@ -36,11 +36,11 @@ export declare namespace IProject {
      * @example "2021-02"
      * @description `undefined` 일 경우 나타나지 않는다.
      */
-    endedAt?: string;
+    endedAt?: string
 
     /**
      * ### 프로젝트 설명
      */
-    descriptions: IRow.Description[];
+    descriptions: IRow.Description[]
   }
 }

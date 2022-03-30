@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react';
+import { CSSProperties } from 'react'
 
 /** Style 추론을 위하여.. */
 type TStyleKey =
@@ -9,7 +9,7 @@ type TStyleKey =
   | 'profileImg'
   | 'footerCover'
   | 'footer'
-  | 'skillKeywordBadge';
+  | 'skillKeywordBadge'
 
 export const Style: Record<TStyleKey, CSSProperties> = {
   blue: {
@@ -52,4 +52,4 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   skillKeywordBadge: {
     fontWeight: 400,
   },
-};
+}

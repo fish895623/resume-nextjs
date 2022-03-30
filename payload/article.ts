@@ -1,4 +1,4 @@
-import { IArticle } from '../component/article/IArticle';
+import { IArticle } from '../component/article/IArticle'
 
 const article: IArticle.Payload = {
   disable: false,
@@ -19,6 +19,6 @@ const article: IArticle.Payload = {
         'https://www.allkpop.com/article/2019/12/iu-donates-to-100-million-krw-after-being-inspired-by-her-fans',
     },
   ],
-};
+}
 
-export default article;
+export default article

@@ -1,4 +1,4 @@
-import { ICommon } from '../common/ICommon';
+import { ICommon } from '../common/ICommon'
 
 export declare namespace ISkill {
   /**
@@ -12,26 +12,26 @@ export declare namespace ISkill {
     /**
      * ### 보유 기술 목록
      */
-    skills: Skill[];
+    skills: Skill[]
 
     /** ### 수치에 대한 설명
      *
      * @description 'SKILL' 타이틀 옆에 붙는 tooltip 이다.
      */
-    tooltip?: string;
+    tooltip?: string
   }
 
   export interface Skill {
     /** ### 대분류 */
-    category: string;
+    category: string
 
     /** ### 해당 분류 내 항목들 */
-    items: Item[];
+    items: Item[]
   }
 
   interface Item {
     /** ### 보유 기술 이름 */
-    title: string;
+    title: string
 
     /**
      * ### 보유 기술 수준
@@ -41,6 +41,6 @@ export declare namespace ISkill {
      * @value 3: 파란색 뱃지로 나타난다. (primary)
      * @value undefined: 뱃지가 붙지 않는다.
      */
-    level?: 1 | 2 | 3;
+    level?: 1 | 2 | 3
   }
 }

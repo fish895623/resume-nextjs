@@ -1,16 +1,16 @@
-import { PropsWithChildren } from 'react';
-import { Row, Col } from 'reactstrap';
-import { IRow } from './IRow';
-import { Style } from './Style';
-import { CommonDescription } from './CommonDescription';
+import { PropsWithChildren } from 'react'
+import { Row, Col } from 'reactstrap'
+import { IRow } from './IRow'
+import { Style } from './Style'
+import { CommonDescription } from './CommonDescription'
 
 export function CommonRows({
   index,
   payload,
 }: PropsWithChildren<{ payload: IRow.Payload; index: number }>) {
-  const { left, right } = payload;
+  const { left, right } = payload
 
-  const isNeedDescriptionPadding = !!(right.title || right.subTitle);
+  const isNeedDescriptionPadding = !!(right.title || right.subTitle)
 
   return (
     <div>
@@ -38,5 +38,5 @@ export function CommonRows({
         </Col>
       </Row>
     </div>
-  );
+  )
 }
